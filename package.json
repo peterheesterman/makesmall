@@ -1,0 +1,25 @@
+{
+  "name": "makesmall",
+  "version": "0.0.1",
+  "description": "Make all jpegs in a folder fit 1920 box",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "makesmall": "./src/index.js"
+  },
+  "keywords": [
+    "jpegs",
+    "resize",
+    "cmd",
+    "tool"
+  ],
+  "author": "Peter Heesterman <heesterman.peter@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jimp": "0.6.0",
+    "ramda": "0.26.1"
+  }
+}
