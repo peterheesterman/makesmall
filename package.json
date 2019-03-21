@@ -1,6 +1,6 @@
 {
   "name": "makesmall",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Make all jpegs in a folder fit 1920 box",
   "main": "src/index.js",
   "scripts": {
@@ -17,6 +17,10 @@
     "tool"
   ],
   "author": "Peter Heesterman <heesterman.peter@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/peterheesterman/makesmall.git"
+  },
   "license": "MIT",
   "dependencies": {
     "jimp": "0.6.0",
