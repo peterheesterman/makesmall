@@ -18,7 +18,7 @@ fs.readdir(process.cwd(), (err, files) => {
   
   const jpegs = R.filter(isJPEG, files)
 
-  console.log('Tranforming', jpegs.length === 0 ? 'nothing' : 'the following: \n')
+  console.log('Tranforming', jpegs.length === 0 ? 'nothing' : 'the following ' + jpegs.length + ' files: \n')
 
   let count = 0
   jpegs.forEach(fileName => {
