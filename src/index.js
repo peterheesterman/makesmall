@@ -25,10 +25,16 @@ fs.readdir(process.cwd(), (err, files) => {
     jimp.read(fileName, (err, image) => {
       if (err) throw err
       console.log('processing...', fileName)
+
+
       image
         .scaleToFit(1920, 1920)
         .quality(35) // set JPEG quality -
-        .write(fileName)
+        .write([
+          fileName.replace(/\.[^/.]+$/, ''),
+          '_small',
+          path.extname(fileName).toLowerCase()
+        ].join(''))
       count++
       if (count === jpegs.length) {
         console.log('\nDONE!')

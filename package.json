@@ -1,6 +1,6 @@
 {
   "name": "makesmall",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Make all jpegs in a folder fit 1920 box",
   "main": "src/index.js",
   "scripts": {
